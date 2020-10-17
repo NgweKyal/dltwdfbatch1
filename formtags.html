@@ -12,9 +12,9 @@
 <div>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/1rAql3cec3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- for Youtube -->
 </div>
-<fieldset>
+<fieldset><!-- stand alone code disabled/readonly/autofocus/required/checked/multiple/selected -->
 	<legend>This is sample form &copy; &amp; &#35;</legend>
-	<form action="" method="POST"><!--POST/GET -->
+	<form action="" method="POST" enctype="multipart/form-data"><!--POST/GET enctype for choose file attachment-->
 	<label for="firstname">First Name</label>	<!--for/id is FirstName click cursor is enter -->
 	<input type="text" name="firstname" id="firstname" class="">
 	<br/>
@@ -38,7 +38,7 @@
 	<br/>
 	<label for="color">Choose Your Fav Color</label>
 	<input type="checkbox" name="color" id="color" class="" value="red">Red
-	<input type="checkbox" name="color" id="color" class="" value="black">Black
+	<input type="checkbox" name="color" id="color" class="" value="black" checked>Black<!--checked default tick -->
 	<input type="checkbox" name="color" id="color" class="" value="white">White
 	<input type="checkbox" name="color" id="color" class="" value="blue">Blue
 	<br/>
@@ -46,7 +46,7 @@
 	<label for="country">Citizen</label>
 	<select name="country" id="country" class="">
 		<option selected disabled>Choose Your Country</option>
-		<option value="myanmar">Myanmar</option>
+		<option value="myanmar" selected>Myanmar</option>
 		<option value="thailand">Thailand</option>
 		<option value="indonisa">Indonisa</option>
 		<option value="laos">Laos</option>
@@ -77,6 +77,18 @@
 	<input type="datetime-local" name="datetime" id="datetime" class="">
 	<br/>
 	<br/>
+	<label for="nrcfront">NRC Front</label>
+	<input type="file" name="nrcfront" id="nrcfront" class="">
+	<br/>
+	<br/>
+	<label for="nrcback">NRC Back</label>
+	<input type="file" name="nrcback" id="nrcback" class="">
+	<br/>
+	<br/>
+	<label for="attach">Attachment</label>
+	<input type="file" name="attach" id="attach" class="" multiple><!--stand alone multiple is choose multi file -->
+	<br/>
+	<br/>
 	<input type="button" name="cancel" id="cancel" class="" value="Cancel">
 	<input type="reset" name="reset" id="reset" class="" value="Reset">
 	<button type="submit" name="submit" id="submit" class="">Submit</button>
@@ -85,7 +97,7 @@
 </div>
 
 <div>
-	<iframe src="imagetag.html" width="50%"></iframe>
+	<iframe src="imagetags.html" width="50%"></iframe>
 </div>
 
 </body>
