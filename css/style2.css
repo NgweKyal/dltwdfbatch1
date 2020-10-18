@@ -1,0 +1,29 @@
+/*Universal Selector */
+*{
+	cursor: pointer;
+}
+.firstdiv{
+	font-size:50px;/*properties*/
+	/* cursor:pointer;*//* no need coz of Uni Selector */
+	width: 800px;
+	height: 200px;
+	background:rgba(88,66,201,0.5); 
+	/*opacity:0.5;*/
+	color:red;
+	border: 5px;
+	border-style: dotted;
+	/*border-style: solid;*/
+	margin:100px auto; /*updown leftright*/
+}
+.seconddiv{
+	color: green;
+	width: 300px;
+	height:200px;
+	font-size: 40px;
+	background-image:url(../img/background/bg1.jpg); 
+	background-repeat:repeat;
+	/*background-repeat:no-repeat;*/
+	/*background-repeat:repeat-x;*/
+	/*background-repeat:repeat-y;*/
+	background-position:center;
+}
