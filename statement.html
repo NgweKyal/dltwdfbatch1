@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Statements</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+	//input
+	// let input = prompt("Say Something");
+	// let x = Number(prompt("Enter First Number"));
+	// let sign = String(prompt("Enter Ari Operator"));
+	// let y = Number(prompt("Enter Second Number"));
+	// let result = x+sign+y+"="+(x+y);
+	// window.alert(input);
+	// document.write(result);
+	// console.log(x > y ? "True":"False");
+
+	//Date Time
+
+	let date = new Date();
+	document.write("This is date = " + date+"<br/>");
+	// 1 Jan 1970 > upnow minli seconds
+	let time = new Date().getTime();
+	document.write("This is time = " +time +"<br/>");
+	let hour = new Date().getHours();
+	document.write("This is hours = " +hour+"<br/>");
+	//Sun=0 , Mon=1,...,Sat=6
+	let day = date.getDay();
+	document.write("This is day = " +day+"<br/>");
+	//Jan=0,...,Dec=11
+	let month = date.getMonth();
+	document.write("This is month = "+month+"<br/>");
+	let year = date.getFullYear();
+	document.write("This is year = "+year+"<br/>");
+
+</script>
+</html>

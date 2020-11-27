@@ -77,11 +77,83 @@
 	// console.log(cbm);
 
 	//Get number from exists array
-	let arr4 = arr1.slice(2);
-	console.log(arr4);
+	// let arr4 = arr1.slice(2);
+	// console.log(arr4);
 
 	//get data from exist array by where to how many
-	let arr5 = arr1.slice(2,5);
+	// let arr5 = arr1.slice(2,5);
+	// console.log(arr5);
+
+	//Sort A -> Z
+	console.log(arr1);
+	console.log(arr1.sort());
+	//Sort Z -> A
+	console.log(arr1.reverse());
+
+	let arr4 =[10,23,14,200,11,50,8,100,40,6,31,25,300];
+	console.log(arr4);
+	// console.log(arr1.sort());
+	// console.log(arr1.reverse());
+	console.log(arr4.sort(function(a,b) {
+		return a-b;
+	}));
+
+	console.log(arr4.sort(function(a,b) {
+		return b-a;
+	}));
+
+	//Array as object
+
+	//Manual Array (index+value)
+	//Associate Array (index+key+value)
+
+	let arr5=[];
+	arr5["firstname"]="Ko";
+	arr5["lastname"]="Aung";
+	arr5["age"]=26;
+	arr5["address"]="Mandalay";
 	console.log(arr5);
+	console.log(arr5["address"]);
+
+	//Array as Object(API)
+	let arr6 = {
+		firstname : "Tin",
+		middlename : "Htut",
+		lastname : "Aung",
+		age : 27
+	}
+	console.log(arr6);
+
+	let arr7 = {
+		"firstname" : "Tin",
+		"middlename" : "Htut",
+		"lastname" : "Aung",
+		"age" : 27
+	}
+	console.log(arr7);
+
+	//Comparison Operators #9
+	// == equal to "1" == 1 true
+	// === equal value and equal type "1" == 1 false
+	// != not equal
+	// !== not equal value and not equal type
+	// > greater than
+	// < less than
+	// >= greater than or equal to
+	// <= less than or equal to
+	// ? tinary operator
+
+	let num1=2;
+	let num2=4;
+
+	document.write("equal to result = "+ (num1 == num2)+"<br/>");
+	document.write("equal value and equal type result = "+ (num1 === num2)+"<br/>");
+	document.write("not equal result = "+ (num1 != num2)+"<br/>");
+	document.write("not equal value and not equal type result = "+ (num1 !== num2)+"<br/>");
+	document.write("greater than result = "+ (num1 > num2)+"<br/>");
+	document.write("less than result = "+ (num1 < num2)+"<br/>");
+	document.write("greater than or equal to result = "+ (num1 >= num2)+"<br/>");
+	document.write("less than or equal to result = "+ (num1 <= num2)+"<br/>");
+	document.write("tinary result = "+ (num1 > num2 ? "Yes, num1 is greater than num2" : "No, num1 is not greater than num2"  ) +"<br/>");
 	</script>
 </html>
